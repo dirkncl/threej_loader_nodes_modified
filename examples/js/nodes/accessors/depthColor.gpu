@@ -1,0 +1,15 @@
+float depthColor( float mNear, float mFar ) {  
+
+  #ifdef USE_LOGDEPTHBUF_EXT  
+
+    float depth = gl_FragDepthEXT / gl_FragCoord.w;  
+
+  #else  
+
+    float depth = gl_FragCoord.z / gl_FragCoord.w;  
+
+  #endif  
+
+  return 1.0 - smoothstep( mNear, mFar, depth );  
+
+}
