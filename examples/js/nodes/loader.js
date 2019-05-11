@@ -14,7 +14,8 @@ function Path(refLoader) {
 var readFileSyncStore = [];
 
 fs.readFileSync = function readFileSync(filePath) {
-  if(!(readFileSyncStore.includes(filePath))){
+  //if(!(readFileSyncStore.includes(filePath))){
+  if(!(filePath in readFileSyncStore)){  
     readFileSyncStore.push(filePath);
     let result = null;
     const xmlhttp = new XMLHttpRequest();
