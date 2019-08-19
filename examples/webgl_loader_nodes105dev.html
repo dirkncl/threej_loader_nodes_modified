@@ -38,17 +38,17 @@
 
 		<script>
 
-      imports('https://raw.githubusercontent.com/mrdoob/three.js/dev/build/three.js');
-      imports('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/geometries/TeapotBufferGeometry.js');
-      imports('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/controls/OrbitControls.js');
-      imports('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/libs/dat.gui.min.js');
+      imports('https://raw.githubusercontent.com/mrdoob/three.js/r105/build/three.js');
+      imports('https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/js/geometries/TeapotBufferGeometry.js');
+      imports('https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/js/controls/OrbitControls.js');
+      imports('https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/js/libs/dat.gui.min.js');
   
     </script>
 
 		<script>
   
       imports('js/nodes/THREE.Nodes.js');
-      imports('https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/loaders/NodeMaterialLoader.js');
+      imports('https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/js/loaders/NodeMaterialLoader.js');
 
 			var container = document.getElementById( 'container' );
 
@@ -78,7 +78,7 @@
 				camera.target = new THREE.Vector3();
 
 				//cloud = new THREE.TextureLoader().load( 'https://threejs.org/examples/textures/lava/cloud.png' );
-				cloud = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/lava/cloud.png' );
+				cloud = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/textures/lava/cloud.png' );
 				cloud.wrapS = cloud.wrapT = THREE.RepeatWrapping;
 
 				controls = new THREE.OrbitControls( camera, renderer.domElement );
@@ -174,7 +174,7 @@
 				clearGui();
 
 				//var url = "https://threejs.org/examples/nodes/" + param.load + ".json";
-				var url = "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/nodes/" + param.load + ".json";
+				var url = "https://raw.githubusercontent.com/mrdoob/three.js/r105/examples/nodes/" + param.load + ".json";
 
 				var library = {
 					"cloud": cloud
